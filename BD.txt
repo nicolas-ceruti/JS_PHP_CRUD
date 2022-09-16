@@ -1,0 +1,29 @@
+INSERT INTO dm_usuarios (nome, sobrenome, email, telefone, idade, senha) VALUES ('thiago', 't', 'thiago@gmail', '3695848812', 18, 'thiago');
+
+CREATE TABLE `dm_usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) NOT NULL,
+  `sobrenome` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `telefone` varchar(20) NOT NULL,
+  `idade` int(11) NOT NULL,
+  `senha` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+
+INSERT INTO `atividade_crud`.`dm_usuarios`
+(`id`,
+`nome`,
+`sobrenome`,
+`email`,
+`telefone`,
+`idade`,
+`senha`)
+VALUES
+(<{id: }>,
+<{nome: }>,
+<{sobrenome: }>,
+<{email: }>,
+<{telefone: }>,
+<{idade: }>,
+<{senha: }>);
